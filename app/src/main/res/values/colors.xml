@@ -5,13 +5,16 @@
     <color name="hint_color">#FFBBCACA</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="app_color">#FFFF3333</color>
-    <color name="app_color2">#FFFF3E3E</color>
-    <color name="cyan">#52ffff</color>
+    <color name="app_color">#F6F6F6</color>
+    <color name="app_color2">#D6E4F0</color>
+    <color name="app_color3">#ECECEC</color>
+    <color name="app_color4">#FFC300</color>
+    <color name="app_color5">#FFC300</color>
+    <color name="cyan">#FF1818</color>
 
-    <!--
-    <color name="colorPrimary">#CC2E76BE</color>
-    <color name="colorPrimaryDark">#CC073D74</color>
+
+    <color name="colorPrimary">#5463FF</color>
+    <color name="colorPrimaryDark">#14279B</color>
     <color name="colorAccent">#0A527E</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#fff</color>
@@ -24,6 +27,6 @@
     <color name="btnedit">#2CA7E0</color>
     <color name="neutral">#0a1b97</color>
     <color name="colordrawer">#2B2C2E</color>
--->
+
 
 </resources>

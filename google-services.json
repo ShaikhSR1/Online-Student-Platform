@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293798552974",
+    "project_id": "online-stp",
+    "storage_bucket": "online-stp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293798552974:android:00001fc3627b957324f0df",
+        "android_client_info": {
+          "package_name": "com.cse27.onlinestudentplatform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293798552974-do96bbfql41vab58sh3oe42i9pfq895v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzmDpc5lc0bFGri9X7IdjCb_6n2i2su_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293798552974-do96bbfql41vab58sh3oe42i9pfq895v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
