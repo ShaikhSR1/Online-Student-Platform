@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.cse27.onlinestudentplatform.View.Login;
+import com.cse27.onlinestudentplatform.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 FirebaseUser user = mAuth.getCurrentUser();
                 if (user == null) {
-                    Intent intent = new Intent(SplashActivity.this, Login.class);
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
                 } else {

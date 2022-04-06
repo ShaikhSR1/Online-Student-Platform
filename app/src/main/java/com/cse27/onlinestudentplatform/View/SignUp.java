@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.cse27.onlinestudentplatform.Controller.SignUpController;
 import com.cse27.onlinestudentplatform.Controller.SignUpControllerInterface;
+import com.cse27.onlinestudentplatform.DashboardActivity;
+import com.cse27.onlinestudentplatform.LoginActivity;
 import com.cse27.onlinestudentplatform.MainActivity;
 import com.cse27.onlinestudentplatform.R;
 
@@ -53,7 +55,7 @@ public class SignUp extends AppCompatActivity implements SignUpViewInterface{
         toLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp.this, Login.class);
+                Intent intent = new Intent(SignUp.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +70,7 @@ public class SignUp extends AppCompatActivity implements SignUpViewInterface{
     @Override
     public void onSignUpSuccess(String message) {
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(SignUp.this, MainActivity.class);
+        Intent intent = new Intent(SignUp.this, DashboardActivity.class);
         startActivity(intent);
 
     }

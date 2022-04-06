@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,7 +39,7 @@ public class ProfileFragment extends Fragment {
     ImageView avatartv;
     TextView nam, email;
     RecyclerView postrecycle;
-    FloatingActionButton fab;
+    Button fab;
     ProgressDialog pd;
 
     public ProfileFragment() {
@@ -67,7 +68,7 @@ public class ProfileFragment extends Fragment {
         avatartv = view.findViewById(R.id.avatartv);
         nam = view.findViewById(R.id.nametv);
         email = view.findViewById(R.id.emailtv);
-        //fab = view.findViewById(R.id.fab);
+        fab = view.findViewById(R.id.fab);
         pd = new ProgressDialog(getActivity());
         pd.setCanceledOnTouchOutside(false);
         Query query = databaseReference.orderByChild("email").equalTo(firebaseUser.getEmail());

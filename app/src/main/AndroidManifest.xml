@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cse27.onlinestudentplatform">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,9 +19,18 @@
             android:name=".EditProfilePage"
             android:exported="false" />
         <activity
-            android:name=".View.Login"
+            android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <activity android:name=".RegistrationActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".SplashActivity"
 
+            android:exported="false"/>
+
+        <activity android:name=".SpalshScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".PostLikedByActivity" />
+        <activity android:name=".PostDetailsActivity" />
+        <activity android:name=".DashboardActivity" />
         <activity
-            android:name=".View.Login"
-            android:exported="false"/>
-
-        <activity
-            android:name=".View.SignUp"
+            android:name=".View.SignUp"/>
 
     </application>
 
